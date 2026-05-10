@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lido App – AI Finance Assistant</title>
+  <meta name="description"
+    content="Lido App is your AI-powered personal finance assistant. Track income, expenses, and savings smarter. Download now for Android." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <img src="logo-full.png" alt="Lido Flow" class="nav-logo-img" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#mascot">Meet Lifo</a></li>
+        <li><a href="#download" class="nav-cta">Download</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#features">Features</a>
+      <a href="#how">How It Works</a>
+      <a href="#mascot">Meet Lifo</a>
+      <a href="#download">Download</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          AI-Powered Finance Assistant
+        </div>
+        <h1 class="hero-title">
+          Take Control of<br />
+          Your <span class="gradient-text">Financial Future</span>
+        </h1>
+        <p class="hero-desc">
+          Lido App uses advanced AI to help you track income, manage expenses, and grow your savings — all in one
+          beautiful dashboard.
+        </p>
+        <div class="hero-actions">
+          <a href="#download" class="btn-primary" id="hero-download-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"
+                fill="currentColor" />
+            </svg>
+            Download for Android
+          </a>
+          <a href="#features" class="btn-ghost">
+            Explore Features
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </a>
+        </div>
+        <div class="hero-highlights">
+          <div class="highlight-pill">
+            <span class="hl-icon">🤖</span>
+            <span>AI Finance Tips</span>
+          </div>
+          <div class="highlight-pill">
+            <span class="hl-icon">📊</span>
+            <span>Smart Tracking</span>
+          </div>
+          <div class="highlight-pill">
+            <span class="hl-icon">🎮</span>
+            <span>Gamified Savings</span>
+          </div>
+          <div class="highlight-pill">
+            <span class="hl-icon">🔒</span>
+            <span>100% Secure</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-phone-wrap">
+        <div class="phone-glow"></div>
+        <div class="phone-frame">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <!-- App UI Mock -->
+            <div class="app-ui">
+              <div class="app-header">
+                <div class="app-logo-row">
+                  <img src="logo-icon.png" alt="Lido Flow" style="width:22px;height:22px;object-fit:contain" />
+                  <span class="app-brand">Lido Flow</span>
+                </div>
+                <div class="app-greeting">
+                  <span class="app-sub">Good Morning ☀️</span>
+                  <span class="app-user">College Student</span>
+                </div>
+                <div class="app-badges">
+                  <span class="app-badge-pill">⭐ Lv.1</span>
+                  <span class="app-badge-pill">🔥 1</span>
+                </div>
+              </div>
+              <div class="app-balance-card">
+                <div class="balance-label">Net Balance · April <span class="eye-icon">👁</span></div>
+                <div class="balance-amount">Rp 1.475.000</div>
+                <div class="balance-status">↗ Surplus this month</div>
+              </div>
+              <div class="app-stats-row">
+                <div class="app-stat-card">
+                  <span>💰</span>
+                  <div class="app-stat-val">Rp 1.500…</div>
+                  <div class="app-stat-lbl">Income</div>
+                </div>
+                <div class="app-stat-card">
+                  <span>✈️</span>
+                  <div class="app-stat-val">Rp 25.000</div>
+                  <div class="app-stat-lbl">Expenses</div>
+                </div>
+                <div class="app-stat-card">
+                  <span>🏦</span>
+                  <div class="app-stat-val">98%</div>
+                  <div class="app-stat-lbl">Saved</div>
+                </div>
+              </div>
+              <div class="app-tip">
+                <span class="tip-label">Daily Tip</span>
+                <div class="tip-body">
+                  <span>💡</span>
+                  <span>Split costs with friends for shared group project expenses.</span>
+                </div>
+              </div>
+              <div class="app-activity">
+                <div class="activity-title">Recent Activity</div>
+                <div class="activity-row">
+                  <div class="activity-icon" style="background:#1E3A5F">💼</div>
+                  <div class="activity-info">
+                    <div class="activity-name">Part-time Job</div>
+                    <div class="activity-date">Apr 27</div>
+                  </div>
+                  <div class="activity-amount income">+Rp 1.500.000</div>
+                </div>
+                <div class="activity-row">
+                  <div class="activity-icon" style="background:#3A1E1E">🍔</div>
+                  <div class="activity-info">
+                    <div class="activity-name">Food</div>
+                    <div class="activity-date">Apr 27</div>
+                  </div>
+                  <div class="activity-amount expense">-Rp 25.000</div>
+                </div>
+              </div>
+              <div class="app-navbar">
+                <span class="nav-item active">🏠</span>
+                <span class="nav-item">🕐</span>
+                <span class="nav-plus">+</span>
+                <span class="nav-item">📈</span>
+                <span class="nav-item">👤</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="floating-card fc-1">
+          <div class="fc-icon">🤖</div>
+          <div class="fc-content">
+            <div class="fc-title">AI Insight</div>
+            <div class="fc-sub">98% savings rate!</div>
+          </div>
+        </div>
+        <div class="floating-card fc-2">
+          <div class="fc-icon">📊</div>
+          <div class="fc-content">
+            <div class="fc-title">Smart Tracking</div>
+            <div class="fc-sub">Real-time updates</div>
+          </div>
+        </div>
+        <!-- Lifo Mascot -->
+        <div class="lifo-mascot">
+          <img src="lifo-mascot.png" alt="Lifo – Lido Flow Mascot" class="lifo-img" />
+          <div class="lifo-bubble">Hi! I'm Lifo 👋<br/>Your finance buddy!</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-label">Why Choose Lido</div>
+      <h2 class="section-title">Smarter Finance,<br /><span class="gradient-text">Powered by AI</span></h2>
+      <p class="section-desc">Everything you need to master your personal finances in one elegant app.</p>
+      <div class="features-grid">
+        <div class="feature-card" data-anim="fade-up">
+          <div class="feature-icon-wrap" style="--ic:#0EA5E9">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+                fill="currentColor" />
+            </svg>
+          </div>
+          <h3>AI Daily Tips</h3>
+          <p>Get personalized financial tips every day based on your spending patterns and savings goals.</p>
+        </div>
+        <div class="feature-card" data-anim="fade-up" style="--delay:.1s">
+          <div class="feature-icon-wrap" style="--ic:#8B5CF6">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"
+                fill="currentColor" />
+            </svg>
+          </div>
+          <h3>Spending Tracker</h3>
+          <p>Categorize and track all your expenses automatically. Know exactly where your money is going.</p>
+        </div>
+        <div class="feature-card" data-anim="fade-up" style="--delay:.2s">
+          <div class="feature-icon-wrap" style="--ic:#10B981">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z" fill="currentColor" />
+            </svg>
+          </div>
+          <h3>Savings Insights</h3>
+          <p>Visual charts and breakdowns show your saving progress and help you hit your financial targets.</p>
+        </div>
+        <div class="feature-card" data-anim="fade-up" style="--delay:.3s">
+          <div class="feature-icon-wrap" style="--ic:#F59E0B">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" fill="currentColor" />
+            </svg>
+          </div>
+          <h3>Secure & Private</h3>
+          <p>Your financial data is encrypted and never shared. You remain in full control of your information.</p>
+        </div>
+        <div class="feature-card" data-anim="fade-up" style="--delay:.4s">
+          <div class="feature-icon-wrap" style="--ic:#EC4899">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"
+                fill="currentColor" />
+            </svg>
+          </div>
+          <h3>Group Expenses</h3>
+          <p>Split costs with friends and roommates. Track shared expenses and settle up easily.</p>
+        </div>
+        <div class="feature-card" data-anim="fade-up" style="--delay:.5s">
+          <div class="feature-icon-wrap" style="--ic:#06B6D4">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M20 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"
+                fill="currentColor" />
+            </svg>
+          </div>
+          <h3>Level Up System</h3>
+          <p>Gamified savings experience. Earn badges and level up as you improve your financial habits.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how" id="how">
+    <div class="container">
+      <div class="section-label">Simple Steps</div>
+      <h2 class="section-title">How It <span class="gradient-text">Works</span></h2>
+      <div class="steps-row">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <div class="step-icon">📲</div>
+          <h3>Download the App</h3>
+          <p>Get Lido App free from the Google Play Store. Quick install, no complicated setup.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <div class="step-icon">✏️</div>
+          <h3>Set Your Goals</h3>
+          <p>Tell Lido your income, spending habits and savings targets. The AI does the rest.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <div class="step-icon">🚀</div>
+          <h3>Grow Your Wealth</h3>
+          <p>Track progress daily, get AI tips and watch your financial health improve over time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEET LIFO -->
+  <section class="mascot-section" id="mascot">
+    <div class="container">
+      <div class="mascot-inner">
+        <div class="mascot-visual">
+          <div class="mascot-glow"></div>
+          <img src="lifo-mascot.png" alt="Lifo – Lido Flow Mascot" class="mascot-big-img" />
+        </div>
+        <div class="mascot-content">
+          <div class="section-label">Our Mascot</div>
+          <h2 class="section-title">Meet <span class="gradient-text">Lifo</span> 🐋</h2>
+          <p class="mascot-desc">Lifo is your personal AI finance buddy — always by your side to help you track spending, celebrate achievements, and keep you motivated on your financial journey.</p>
+          <div class="lifo-traits">
+            <div class="trait-pill"><span>💙</span> Supportive</div>
+            <div class="trait-pill"><span>⭐</span> Smart</div>
+            <div class="trait-pill"><span>⚡</span> Cerdas &amp; Paham</div>
+            <div class="trait-pill"><span>😊</span> Selalu Positif</div>
+          </div>
+          <div class="beta-banner">
+            <div class="beta-badge">🚀 Early Access</div>
+            <h3>Be Our First Beta Testers!</h3>
+            <p>We're looking for passionate college students and young professionals to try Lido App first and help us shape the future of personal finance.</p>
+            <a href="#download" class="btn-primary beta-cta">Download &amp; Join Beta</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD -->
+  <section class="download" id="download">
+    <div class="download-bg">
+      <div class="orb orb-d1"></div>
+      <div class="orb orb-d2"></div>
+    </div>
+    <div class="container download-inner">
+      <div class="download-content">
+        <div class="section-label">Available Now</div>
+        <h2 class="download-title">Start Your Financial<br /><span class="gradient-text">Journey Today</span></h2>
+        <p class="download-desc">Download Lido App for free and take the first step towards smarter money management. No
+          credit card required.</p>
+        <div class="download-buttons">
+          <a href="app-release.apk" class="store-btn store-btn-ghost" id="apk-btn">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" />
+            </svg>
+            <div class="store-text">
+              <span class="store-sub">Direct</span>
+              <span class="store-name">Download APK</span>
+            </div>
+          </a>
+        </div>
+        <div class="download-meta">
+          <span>✅ Free to download</span>
+          <span>✅ No ads</span>
+          <span>✅ Android 7.0+</span>
+        </div>
+      </div>
+      <div class="download-phone">
+        <div class="phone-frame phone-sm">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="app-ui app-ui-sm">
+              <div class="app-header">
+                <div class="app-logo-row">
+                  <img src="logo-icon.png" alt="Lido Flow" style="width:16px;height:16px;object-fit:contain" />
+                  <span class="app-brand" style="font-size:11px">Lido Flow</span>
+                </div>
+                <div class="app-greeting">
+                  <span class="app-sub">Good Morning ☀️</span>
+                  <span class="app-user" style="font-size:13px">College Student</span>
+                </div>
+              </div>
+              <div class="app-balance-card">
+                <div class="balance-label" style="font-size:8px">Net Balance · April</div>
+                <div class="balance-amount" style="font-size:16px">Rp 1.475.000</div>
+                <div class="balance-status" style="font-size:8px">↗ Surplus this month</div>
+              </div>
+              <div class="app-stats-row">
+                <div class="app-stat-card"><span style="font-size:12px">💰</span>
+                  <div class="app-stat-val" style="font-size:8px">Rp 1.5M</div>
+                  <div class="app-stat-lbl" style="font-size:7px">Income</div>
+                </div>
+                <div class="app-stat-card"><span style="font-size:12px">✈️</span>
+                  <div class="app-stat-val" style="font-size:8px">Rp 25K</div>
+                  <div class="app-stat-lbl" style="font-size:7px">Expenses</div>
+                </div>
+                <div class="app-stat-card"><span style="font-size:12px">🏦</span>
+                  <div class="app-stat-val" style="font-size:8px">98%</div>
+                  <div class="app-stat-lbl" style="font-size:7px">Saved</div>
+                </div>
+              </div>
+              <div class="app-tip" style="padding:8px">
+                <span class="tip-label" style="font-size:8px">Daily Tip</span>
+                <div class="tip-body" style="font-size:8px;gap:4px"><span>💡</span><span>Split costs with
+                    friends!</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <img src="logo-full.png" alt="Lido Flow" class="footer-logo-img" />
+        </div>
+        <p>Your AI-powered personal finance companion. Built with ❤️ for smarter money decisions.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="#how">How It Works</a>
+          <a href="#download">Download</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="#">FAQ</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Lido App. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
