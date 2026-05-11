@@ -6,7 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lido App – AI Finance Assistant</title>
   <meta name="description"
-    content="Lido App is your AI-powered personal finance assistant. Track income, expenses, and savings smarter. Download now for Android." />
+    content="Lido App is your AI-powered personal finance assistant. Track income, expenses, and savings smarter. Available on Android & iOS via web." />
+  <!-- Apple Web App Meta -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Lido Flow" />
+  <link rel="apple-touch-icon" href="logo-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
@@ -68,13 +73,14 @@
               <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"
                 fill="currentColor" />
             </svg>
-            Download for Android
+            Get the App
           </a>
-          <a href="#features" class="btn-ghost">
-            Explore Features
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-              <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          <a href="https://lido-flow.vercel.app" target="_blank" rel="noopener" class="btn-ghost" id="hero-web-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10A15.3 15.3 0 0112 2z" stroke="currentColor" stroke-width="2"/>
             </svg>
+            Open Web App
           </a>
         </div>
         <div class="hero-highlights">
@@ -87,8 +93,8 @@
             <span>Smart Tracking</span>
           </div>
           <div class="highlight-pill">
-            <span class="hl-icon">🎮</span>
-            <span>Gamified Savings</span>
+            <span class="hl-icon">📱</span>
+            <span>Android & iOS</span>
           </div>
           <div class="highlight-pill">
             <span class="hl-icon">🔒</span>
@@ -192,7 +198,7 @@
         <!-- Lifo Mascot -->
         <div class="lifo-mascot">
           <img src="lifo-mascot.png" alt="Lifo – Lido Flow Mascot" class="lifo-img" />
-          <div class="lifo-bubble">Hi! I'm Lifo 👋<br/>Your finance buddy!</div>
+          <div class="lifo-bubble">Hi! I'm Lifo 👋<br />Your finance buddy!</div>
         </div>
       </div>
     </div>
@@ -279,8 +285,8 @@
         <div class="step-card">
           <div class="step-num">01</div>
           <div class="step-icon">📲</div>
-          <h3>Download the App</h3>
-          <p>Get Lido App free from the Google Play Store. Quick install, no complicated setup.</p>
+          <h3>Get the App</h3>
+          <p>Download the APK for Android or open the web app on iPhone. Quick access, no complicated setup.</p>
         </div>
         <div class="step-arrow">→</div>
         <div class="step-card">
@@ -311,7 +317,8 @@
         <div class="mascot-content">
           <div class="section-label">Our Mascot</div>
           <h2 class="section-title">Meet <span class="gradient-text">Lifo</span> 🐋</h2>
-          <p class="mascot-desc">Lifo is your personal AI finance buddy — always by your side to help you track spending, celebrate achievements, and keep you motivated on your financial journey.</p>
+          <p class="mascot-desc">Lifo is your personal AI finance buddy — always by your side to help you track
+            spending, celebrate achievements, and keep you motivated on your financial journey.</p>
           <div class="lifo-traits">
             <div class="trait-pill"><span>💙</span> Supportive</div>
             <div class="trait-pill"><span>⭐</span> Smart</div>
@@ -321,7 +328,8 @@
           <div class="beta-banner">
             <div class="beta-badge">🚀 Early Access</div>
             <h3>Be Our First Beta Testers!</h3>
-            <p>We're looking for passionate college students and young professionals to try Lido App first and help us shape the future of personal finance.</p>
+            <p>We're looking for passionate college students and young professionals to try Lido App first and help us
+              shape the future of personal finance.</p>
             <a href="#download" class="btn-primary beta-cta">Download &amp; Join Beta</a>
           </div>
         </div>
@@ -339,24 +347,87 @@
       <div class="download-content">
         <div class="section-label">Available Now</div>
         <h2 class="download-title">Start Your Financial<br /><span class="gradient-text">Journey Today</span></h2>
-        <p class="download-desc">Download Lido App for free and take the first step towards smarter money management. No
-          credit card required.</p>
-        <div class="download-buttons">
-          <a href="app-release.apk" class="store-btn store-btn-ghost" id="apk-btn">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" />
-            </svg>
-            <div class="store-text">
-              <span class="store-sub">Direct</span>
-              <span class="store-name">Download APK</span>
+        <p class="download-desc">Get Lido App for free on any device — Android or iOS. No credit card required.</p>
+
+        <!-- Platform Tabs -->
+        <div class="platform-tabs" id="platform-tabs">
+          <button class="platform-tab active" data-platform="android" id="tab-android">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 2.249l1.39-2.405a.29.29 0 00-.503-.29l-1.408 2.44A8.26 8.26 0 0012 .711a8.26 8.26 0 00-5.002 1.283L5.59-.447a.29.29 0 00-.503.29l1.39 2.405C3.727 4.2 1.695 7.228 1.523 10.756h20.954c-.172-3.528-2.204-6.556-4.954-8.507zM7.5 7.5a1 1 0 110-2 1 1 0 010 2zm9 0a1 1 0 110-2 1 1 0 010 2zM1.523 11.756v8.5A2.75 2.75 0 004.273 23h1.5v3.25a1.75 1.75 0 103.5 0V23h5.454v3.25a1.75 1.75 0 103.5 0V23h1.5a2.75 2.75 0 002.75-2.75v-8.494z"/></svg>
+            Android
+          </button>
+          <button class="platform-tab" data-platform="ios" id="tab-ios">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            iPhone / iPad
+          </button>
+        </div>
+
+        <!-- Android Panel -->
+        <div class="platform-panel active" id="panel-android">
+          <div class="download-buttons">
+            <a href="app-release.apk" class="store-btn store-btn-ghost" id="apk-btn">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" />
+              </svg>
+              <div class="store-text">
+                <span class="store-sub">Direct</span>
+                <span class="store-name">Download APK</span>
+              </div>
+            </a>
+          </div>
+          <div class="download-meta">
+            <span>✅ Free to download</span>
+            <span>✅ No ads</span>
+            <span>✅ Android 7.0+</span>
+          </div>
+        </div>
+
+        <!-- iOS Panel -->
+        <div class="platform-panel" id="panel-ios">
+          <div class="download-buttons">
+            <a href="https://lido-flow.vercel.app" target="_blank" rel="noopener" class="store-btn" id="webapp-btn">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10A15.3 15.3 0 0112 2z"/>
+              </svg>
+              <div class="store-text">
+                <span class="store-sub">Open in Browser</span>
+                <span class="store-name">Launch Web App</span>
+              </div>
+            </a>
+          </div>
+          <div class="ios-instructions" id="ios-instructions">
+            <div class="ios-instructions-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+              Add to Home Screen for app-like experience
             </div>
-          </a>
+            <div class="ios-steps">
+              <div class="ios-step">
+                <div class="ios-step-num">1</div>
+                <div class="ios-step-text">Open <a href="https://lido-flow.vercel.app" target="_blank" rel="noopener">lido-flow.vercel.app</a> in <strong>Safari</strong></div>
+              </div>
+              <div class="ios-step">
+                <div class="ios-step-num">2</div>
+                <div class="ios-step-text">Tap the <strong>Share</strong> button <span class="ios-share-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                </span></div>
+              </div>
+              <div class="ios-step">
+                <div class="ios-step-num">3</div>
+                <div class="ios-step-text">Select <strong>"Add to Home Screen"</strong></div>
+              </div>
+              <div class="ios-step">
+                <div class="ios-step-num">4</div>
+                <div class="ios-step-text">Tap <strong>"Add"</strong> — Enjoy the app! 🎉</div>
+              </div>
+            </div>
+          </div>
+          <div class="download-meta">
+            <span>✅ Works on iPhone & iPad</span>
+            <span>✅ No App Store needed</span>
+            <span>✅ Instant access</span>
+          </div>
         </div>
-        <div class="download-meta">
-          <span>✅ Free to download</span>
-          <span>✅ No ads</span>
-          <span>✅ Android 7.0+</span>
-        </div>
+
       </div>
       <div class="download-phone">
         <div class="phone-frame phone-sm">

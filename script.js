@@ -51,3 +51,40 @@ document.querySelectorAll('.btn-primary, .store-btn').forEach(btn => {
 const style = document.createElement('style');
 style.textContent = `@keyframes rippleAnim { to { width:300px; height:300px; margin:-150px; opacity:0; } }`;
 document.head.appendChild(style);
+
+// Platform tab switcher (Android / iOS)
+const platformTabs = document.querySelectorAll('.platform-tab');
+const platformPanels = document.querySelectorAll('.platform-panel');
+
+platformTabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const platform = tab.dataset.platform;
+
+    // Update tabs
+    platformTabs.forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+
+    // Update panels with re-trigger animation
+    platformPanels.forEach(p => {
+      p.classList.remove('active');
+      p.style.animation = 'none';
+    });
+
+    const targetPanel = document.getElementById(`panel-${platform}`);
+    if (targetPanel) {
+      // Force reflow to re-trigger animation
+      void targetPanel.offsetWidth;
+      targetPanel.style.animation = '';
+      targetPanel.classList.add('active');
+    }
+  });
+});
+
+// Auto-detect iOS and switch to iOS tab
+const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+  (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
+if (isIOS) {
+  const iosTab = document.getElementById('tab-ios');
+  if (iosTab) iosTab.click();
+}
